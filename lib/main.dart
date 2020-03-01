@@ -139,7 +139,7 @@ class _MyAppState extends State<MyApp> {
     StreamSubscription sub = mapView.onMapReady.listen((_) {
       mapView.setMarkers(_markers);
       mapView.setPolylines(_lines);
-      //mapView.setPolygons(_polygons);
+      //\mapView.setPolygons(_polygons);
     });
     compositeSubscription.add(sub);
     sub = mapView.onLocationUpdated.listen((location) {
